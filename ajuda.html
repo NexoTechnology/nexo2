@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Central de Ajuda - Nexo Assistência Técnica</title>
+    <link rel="stylesheet" href="style.css" />
+     <link rel="stylesheet" href="style-ajuda.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Ysabeau+Office:wght@200;400;700&display=swap">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="dark-theme">
+<a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+<div id="intro-animation" role="dialog" aria-label="Animação de Introdução. Clique para pular ou espere para ser redirecionado para a página principal." tabindex="0">
+    <img src="imagens/NexoIcon.png" alt="Ícone Nexo" class="intro-icon" loading="lazy">
+    <div class="intro-text">
+        <p>Buscando Soluções e Respostas...</p>
+    </div>
+     <button id="skip-intro-button" onclick="skipIntro()">Pular Intro <i class="fa-solid fa-forward"></i></button>
+</div>
+
+<div id="content-wrapper" style="display:none;">
+    <header id="botoes" class="sticky-header" role="banner">
+        <div class="botnav">
+            <label class="burger" for="burger" aria-label="Menu de Navegação">
+                <input type="checkbox" id="burger" role="button" aria-controls="nav" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+
+        <div class="search-container" role="search">
+            <div id="search-bar">
+                <input type="text" id="search-input" placeholder="Pesquisar ajuda..." aria-label="Campo de pesquisa da central de ajuda">
+                <div id="search-suggestions" aria-live="polite" aria-relevant="additions text">
+                    <ul></ul>
+                </div>
+                <button id="search-button" aria-label="Buscar Ajuda"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+
+        <div class="accessibility-container">
+            <button id="accessibility-button" aria-label="Opções de Acessibilidade" aria-haspopup="true" aria-controls="accessibility-options" aria-expanded="false">
+                <i class="fas fa-universal-access"></i>
+            </button>
+        </div>
+
+        <div class="config-container">
+            <button id="config-button" aria-label="Configurações do Site">
+                <i class="fas fa-cog"></i>
+            </button>
+         </div>
+    </header>
+
+     <nav id="nav" aria-label="Menu Principal" role="navigation">
+        <button id="close-nav-button" aria-label="Fechar Menu"><i class="fa-solid fa-xmark"></i></button>
+        <ul>
+            <li><a href="index.html"><img src="imagens/inicio.png" alt="Ícone Início" class="nav-icon"> Início</a></li>
+            <li><a href="servicos.html"><img src="imagens/servicos.png" alt="Ícone Serviços" class="nav-icon"> Serviços</a></li>
+            <li><a href="produtos.html"><img src="imagens/produtos.png" alt="Ícone Produtos" class="nav-icon"> Produtos</a></li>
+            <li><a href="contato.html"><img src="imagens/contato.png" alt="Ícone Contato" class="nav-icon"> Contato</a></li>
+            <li><a href="parceiros.html"><img src="imagens/parceiros.png" alt="Ícone Parceiros" class="nav-icon"> Parceiros</a></li>
+        </ul>
+    </nav>
+
+    <header class="cabecalho-nexo page-header" role="banner">
+        <div id="logo-container">
+            <h1 class="nexo-title-internal ajuda"><i class="fas fa-question-circle"></i> Central de Ajuda</h1>
+            <p class="nexo-subtitle-internal">Encontre respostas e suporte rápido</p>
+        </div>
+    </header>
+
+    <main id="main-content" role="main">
+        <section id="central-de-ajuda-nexo" class="centralized-section content-section">
+            <h2 class="help-page-title">Como Podemos Ajudar?</h2>
+            <p class="section-subtitle">Explore os tópicos mais procurados ou entre em contato com nossa equipe de suporte.</p>
+
+             <div id="help-search-box" role="search">
+                <input type="text" id="help-search-input" placeholder="Digite sua dúvida ou palavra-chave..." aria-label="Campo de pesquisa da central de ajuda">
+                <button id="help-search-button" aria-label="Buscar na Central de Ajuda"><i class="fas fa-search"></i> Buscar</button>
+            </div>
+
+            <section class="ajuda-topicos">
+                <h3>Tópicos Populares</h3>
+                <ul class="help-topics-list">
+                    <li>
+                        <i class="fas fa-box-open"></i>
+                        <h4><button class="help-topic-button" onclick="showAlert('Rastreamento de Pedidos')">Rastreamento de Pedidos</button></h4>
+                        <p>Saiba como rastrear seu pedido e acompanhar a entrega dos seus produtos Nexo.</p>
+                    </li>
+                    <li>
+                        <i class="fas fa-undo-alt"></i>
+                        <h4><button class="help-topic-button" onclick="showAlert('Política de Devoluções e Reembolsos')">Devoluções e Reembolsos</button></h4>
+                        <p>Informações sobre nossa política de devoluções, prazos e como solicitar um reembolso.</p>
+                    </li>
+                    <li>
+                        <i class="fas fa-cogs"></i>
+                        <h4><button class="help-topic-button" onclick="showAlert('Configurações de Acessibilidade')">Acessibilidade no Site</button></h4>
+                        <p>Guia sobre como utilizar as opções de acessibilidade do site para uma melhor experiência de navegação.</p>
+                    </li>
+                    <li>
+                        <i class="fas fa-user-shield"></i>
+                        <h4><button class="help-topic-button" onclick="showAlert('Privacidade e Segurança de Dados')">Privacidade e Segurança</button></h4>
+                        <p>Entenda como protegemos seus dados e informações pessoais em nosso site e serviços.</p>
+                    </li>
+                    <li>
+                        <i class="fas fa-question-circle"></i>
+                        <h4><button class="help-topic-button" onclick="showAlert('Perguntas Frequentes (FAQ)')">Perguntas Frequentes</button></h4>
+                        <p>Respostas rápidas para as dúvidas mais comuns sobre nossos produtos, serviços e site.</p>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="contato-suporte">
+                <h3>Precisa de Suporte Personalizado?</h3>
+                <p>Nossa equipe de suporte está pronta para ajudar com questões específicas ou problemas que você não encontrou solução nos tópicos acima.</p>
+                <div class="contact-methods">
+                    <div class="contact-card">
+                        <i class="fas fa-envelope"></i>
+                        <h4>E-mail</h4>
+                        <p><a href="mailto:suporte@nexoassistenciatecnica.com.br">suporte@nexoassistenciatecnica.com.br</a></p>
+                        <p class="contact-detail">Responderemos em até 24 horas.</p>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fas fa-phone"></i>
+                        <h4>Telefone</h4>
+                        <p><a href="tel:+551140028922">+55 11 4002-8922</a></p>
+                        <p class="contact-detail">Seg-Sex, 9h-18h (exceto feriados)</p>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fas fa-comments"></i>
+                        <h4>Chat ao Vivo</h4>
+                        <p>Disponível em nosso site durante o horário comercial.</p>
+                        <button class="live-chat-button" onclick="showAlert('Chat ao Vivo')">Iniciar Chat</button>
+                         <p class="contact-detail">Clique para abrir o chat.</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer id="rodape-nexo" role="contentinfo">
+        <div class="footer-bottom">
+            <p>© 2025 Nexo Assistência Técnica. Todos os direitos reservados.</p>
+            <p>Desenvolvido por Nexo </p>
+        </div>
+    </footer>
+
+    <div id="accessibility-options" style="display: none; position: fixed; top: 58px; right: 10px; background-color: rgba(30, 30, 35, 0.9); padding: 20px; border-radius: 10px; box-shadow: 3px 3px 7px rgba(0,0,0,0.4); z-index: 1500; text-align: left; border: 1px solid #555;" aria-hidden="true" aria-labelledby="accessibility-panel-heading">
+        <h4 id="accessibility-panel-heading" style="margin-top: 0; margin-bottom: 15px;">Opções de Acessibilidade</h4>
+        <div style="margin-bottom: 10px;"><button id="increase-font-button" class="config-button-style"><i class="fa-solid fa-font-increase"></i> Aumentar Font</button> <button id="decrease-font-button" class="config-button-style"><i class="fa-solid fa-font-decrease"></i> Diminuir Font</button></div><br>
+        <button id="high-contrast-button" class="config-button-style"><i class="fa-solid fa-circle-half-stroke"></i> Alto Contraste</button><br><br>
+        <button id="dyslexia-font-button" class="config-button-style"><i class="fa-solid fa- Braille"></i> Fonte para Dislexia</button><br><br>
+        <button id="text-spacing-button" class="config-button-style"><i class="fa-solid fa-text-width"></i> Espaçamento de Texto</button><br><br>
+        <button id="line-height-button" class="config-button-style"><i class="fa-solid fa-text-height"></i> Altura da Linha</button><br><br>
+        <button id="grayscale-button" class="config-button-style"><i class="fa-solid fa-eye-dropper"></i> Tons de Cinza</button><br><br>
+        <button id="invert-colors-button" class="config-button-style"><i class="fa-solid fa-invert"></i> Inverter Cores</button><br><br>
+        <button id="remove-animations-button" class="config-button-style"><i class="fa-solid fa-film"></i> Remover Animações</button><br><br>
+        <button id="highlight-links-button" class="config-button-style"><i class="fa-solid fa-link"></i> Destacar Links</button><br><br>
+        <button id="close-accessibility-button" class="config-button-style"><i class="fa-solid fa-xmark"></i> Fechar</button>
+    </div>
+</div>
+<script src="script.js"></script>
+<script>
+    function showAlert(topic) {
+        alert('Você clicou em: ' + topic + '. Esta funcionalidade está em desenvolvimento.');
+    }
+</script>
+</body>
+</html>

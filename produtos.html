@@ -1,0 +1,164 @@
+--- IMPROVED produtos.html ---
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos - Nexo Assistência Técnica e Soluções em Tecnologia</title>
+    <link rel="stylesheet" href="style.css" />
+     <link rel="stylesheet" href="style-produtos.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Ysabeau+Office:wght@200;400;700&display=swap">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body class="dark-theme">
+<a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+<div id="intro-animation" role="dialog" aria-label="Animação de Introdução. Clique para pular ou espere para ser redirecionado para a página principal." tabindex="0">
+    <img src="imagens/NexoIcon.png" alt="Ícone Nexo" class="intro-icon" loading="lazy">
+     <div class="intro-text">
+        <p>Preparando o Estoque de Inovações...</p>
+    </div>
+    <button id="skip-intro-button" onclick="skipIntro()">Pular Intro <i class="fa-solid fa-forward"></i></button>
+</div>
+
+<div id="content-wrapper" style="display:none;">
+    <header id="botoes" class="sticky-header" role="banner">
+        <div class="botnav">
+            <label class="burger" for="burger" aria-label="Menu de Navegação">
+                <input type="checkbox" id="burger" role="button" aria-controls="nav" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+
+
+         <div class="search-container" role="search">
+            <div id="search-bar">
+                <input type="text" id="search-input" placeholder="Pesquisar produtos..." aria-label="Campo de pesquisa de produtos">
+                 <div id="search-suggestions" aria-live="polite" aria-relevant="additions text">
+                </div>
+                <button id="search-button" aria-label="Pesquisar Produtos"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+
+         <div class="accessibility-container">
+            <button id="accessibility-button" aria-label="Opções de Acessibilidade" aria-haspopup="true" aria-controls="accessibility-options" aria-expanded="false">
+                <i class="fas fa-universal-access"></i>
+            </button>
+        </div>
+
+
+        <div class="config-container">
+            <button id="config-button" aria-label="Configurações do Site">
+                <i class="fas fa-cog"></i>
+            </button>
+
+
+         </div>
+
+    </header>
+
+
+    <nav id="nav" aria-label="Menu Principal" role="navigation">
+         <button id="close-nav-button" aria-label="Fechar Menu"><i class="fa-solid fa-xmark"></i></button>
+        <ul>
+            <li><a href="index.html"><img src="imagens/inicio.png" alt="Ícone Início" class="nav-icon"> Início</a></li>
+            <li><a href="servicos.html"><img src="imagens/servicos.png" alt="Ícone Serviços" class="nav-icon"> Serviços</a></li>
+            <li class="current-page"><a href="produtos.html" aria-current="page"><img src="imagens/produtos.png" alt="Ícone Produtos" class="nav-icon"> Produtos</a></li>
+            <li><a href="contato.html"><img src="imagens/contato.png" alt="Ícone Contato" class="nav-icon"> Contato</a></li>
+            <li><a href="parceiros.html"><img src="imagens/parceiros.png" alt="Ícone Parceiros" class="nav-icon"> Parceiros</a></li>
+        </ul>
+    </nav>
+
+    <header class="cabecalho-nexo page-header" role="banner">
+        <div id="logo-container">
+            <h1 class="nexo-title-internal produtos">NEXO</h1>
+            <p class="nexo-subtitle-internal">SOLUÇÕES INOVADORAS AO SEU ALCANCE</p>
+        </div>
+    </header>
+    <main id="main-content" role="main">
+        <section id="pagina-produtos" class="centralized-section content-section">
+            <h2 class="product-page-title">Nosso Catálogo de Produtos</h2>
+            <p class="section-subtitle">
+                Explore as soluções de TI de última geração que oferecemos para impulsionar o seu negócio.
+            </p>
+
+            <div class="oferecemos-grid produtos-grid">
+                <section class="oferecemos-item produto-item produto-destaque">
+                    <div class="produto-header">
+                        <i class="fas fa-desktop produto-icon"></i>
+                        <h3>Equipamentos de Informática</h3>
+                    </div>
+                    <div class="produto-body">
+                        <p>Desktops de alto desempenho, workstations potentes, notebooks corporativos e servidores robustos para otimizar sua infraestrutura de TI.</p>
+                        <a href="#catalogo-equipamentos" class="saiba-mais produto-link">Ver Catálogo</a>
+                    </div>
+                </section>
+
+                <section class="oferecemos-item produto-item produto-destaque">
+                    <div class="produto-header">
+                        <i class="fas fa-laptop-code produto-icon"></i>
+                        <h3>Softwares e Licenças</h3>
+                    </div>
+                    <div class="produto-body">
+                        <p>Softwares de gestão empresarial ERP e CRM, soluções de segurança cibernética avançada, ferramentas de produtividade e licenciamento flexível para suas necessidades.</p>
+                        <a href="#catalogo-softwares" class="saiba-mais produto-link">Ver Catálogo</a>
+                    </div>
+                </section>
+
+                <section class="oferecemos-item produto-item produto-destaque">
+                    <div class="produto-header">
+                        <i class="fas fa-cloud produto-icon"></i>
+                        <h3>Soluções em Nuvem</h3>
+                    </div>
+                    <div class="produto-body">
+                        <p>Infraestrutura em nuvem escalável IaaS, armazenamento seguro e eficiente, e soluções de backup e recuperação de dados para garantir a continuidade do seu negócio.</p>
+                        <a href="#catalogo-nuvem" class="saiba-mais produto-link">Ver Catálogo</a>
+                    </div>
+                </section>
+
+                <section class="oferecemos-item produto-item produto-destaque">
+                    <div class="produto-header">
+                        <i class="fas fa-headphones produto-icon"></i>
+                        <h3>Acessórios e Componentes</h3>
+                    </div>
+                    <div class="produto-body">
+                        <p>Monitores de alta definição, teclados e mouses ergonômicos, webcams e sistemas de videoconferência, além de peças de reposição e periféricos de última geração.</p>
+                        <a href="#catalogo-acessorios" class="saiba-mais produto-link">Ver Catálogo</a>
+                    </div>
+                </section>
+            </div>
+
+            <footer id="rodape-nexo" role="contentinfo">
+                <div class="footer-bottom">
+                    <p>© 2025 Nexo Assistência Técnica. Todos os direitos reservados.</p>
+                    <p>Desenvolvido por Nexo </p>
+                </div>
+            </footer>
+
+
+    <audio id="menu-sound" preload="auto" src="sounds/menu-sound.mp3"></audio>
+    <audio id="config-sound" preload="auto" src="sounds/config-sound.mp3"></audio>
+    <audio id="search-sound" preload="auto" src="sounds/search-sound.mp3"></audio>
+    <audio id="theme-sound" preload="auto" src="sounds/theme-sound.mp3"></audio>
+    <audio id="notification-sound" preload="auto" src="sounds/notification-sound.mp3"></audio>
+    <audio id="select-sound" preload="auto" src="sounds/select-sound.mp3"></audio>
+    <audio id="intro-sound" preload="auto" src="sounds/intro-sound.mp3"></audio>
+     <div id="accessibility-options" style="display: none; position: fixed; top: 58px; right: 10px; background-color: rgba(30, 30, 35, 0.9); padding: 20px; border-radius: 10px; box-shadow: 3px 3px 7px rgba(0,0,0,0.4); z-index: 1500; text-align: left;" aria-hidden="true" aria-labelledby="accessibility-panel-heading">
+        <h4 id="accessibility-panel-heading">Opções de Acessibilidade</h4>
+        <div style="margin-bottom: 10px;"><button id="increase-font-button" class="config-button-style"><i class="fa-solid fa-font-increase"></i> Aumentar Font</button> <button id="decrease-font-button" class="config-button-style"><i class="fa-solid fa-font-decrease"></i> Diminuir Font</button></div><br>
+        <button id="high-contrast-button" class="config-button-style"><i class="fa-solid fa-circle-half-stroke"></i> Alto Contraste</button><br><br>
+        <button id="dyslexia-font-button" class="config-button-style"><i class="fa-solid fa- Braille"></i> Fonte para Dislexia</button><br><br>
+        <button id="text-spacing-button" class="config-button-style"><i class="fa-solid fa-text-width"></i> Espaçamento de Texto</button><br><br>
+        <button id="line-height-button" class="config-button-style"><i class="fa-solid fa-text-height"></i> Altura da Linha</button><br><br>
+        <button id="grayscale-button" class="config-button-style"><i class="fa-solid fa-eye-dropper"></i> Tons de Cinza</button><br><br>
+        <button id="invert-colors-button" class="config-button-style"><i class="fa-solid fa-invert"></i> Inverter Cores</button><br><br>
+        <button id="remove-animations-button" class="config-button-style"><i class="fa-solid fa-film"></i> Remover Animações</button><br><br>
+        <button id="highlight-links-button" class="config-button-style"><i class="fa-solid fa-link"></i> Destacar Links</button><br><br>
+        <button id="close-accessibility-button" class="config-button-style"><i class="fa-solid fa-xmark"></i> Fechar</button>
+    </div>
+    <script src="script.js"></script>
+</div>
+</body>
+</html>

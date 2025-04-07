@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-device-width, initial-scale=1.0">
+    <title>Serviços - Nexo Assistência Técnica e Soluções em Tecnologia</title>
+    <link rel="stylesheet" href="style.css" />
+     <link rel="stylesheet" href="style-servicos.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Ysabeau+Office:wght@200;400;700&display=swap">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body class="dark-theme">
+<a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+<div id="intro-animation" role="dialog" aria-label="Animação de Introdução. Clique para pular ou espere para ser redirecionado para a página principal." tabindex="0">
+    <img src="imagens/NexoIcon.png" alt="Ícone Nexo" class="intro-icon" loading="lazy">
+     <div class="intro-text">
+        <p>Otimizando Soluções para Você...</p>
+    </div>
+     <button id="skip-intro-button" onclick="skipIntro()">Pular Intro <i class="fa-solid fa-forward"></i></button>
+</div>
+
+<div id="content-wrapper" style="display:none;">
+    <header id="botoes" class="sticky-header" role="banner">
+        <div class="botnav">
+            <label class="burger" for="burger" aria-label="Menu de Navegação">
+                <input type="checkbox" id="burger" role="button" aria-controls="nav" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+
+         <div class="search-container" role="search">
+            <div id="search-bar">
+                <input type="text" id="search-input" placeholder="Pesquisar serviços..." aria-label="Campo de pesquisa de serviços">
+                 <div id="search-suggestions" aria-live="polite" aria-relevant="additions text">
+                    <ul></ul>
+                </div>
+                <button id="search-button" aria-label="Pesquisar Serviços"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+
+         <div class="accessibility-container">
+            <button id="accessibility-button" aria-label="Opções de Acessibilidade" aria-haspopup="true" aria-controls="accessibility-options" aria-expanded="false">
+                <i class="fas fa-universal-access"></i>
+            </button>
+        </div>
+
+        <div class="config-container">
+            <button id="config-button" aria-label="Configurações do Site">
+                <i class="fas fa-cog"></i>
+            </button>
+
+         </div>
+
+    </header>
+
+
+     <nav id="nav" aria-label="Menu Principal" role="navigation">
+        <button id="close-nav-button" aria-label="Fechar Menu"><i class="fa-solid fa-xmark"></i></button>
+        <ul>
+            <li><a href="index.html"><img src="imagens/inicio.png" alt="Ícone Início" class="nav-icon"> Início</a></li>
+            <li class="current-page"><a href="servicos.html" aria-current="page"><img src="imagens/servicos.png" alt="Ícone Serviços" class="nav-icon"> Serviços</a></li>
+            <li><a href="produtos.html"><img src="imagens/produtos.png" alt="Ícone Produtos" class="nav-icon"> Produtos</a></li>
+            <li><a href="contato.html"><img src="imagens/contato.png" alt="Ícone Contato" class="nav-icon"> Contato</a></li>
+            <li><a href="parceiros.html"><img src="imagens/parceiros.png" alt="Ícone Parceiros" class="nav-icon"> Parceiros</a></li>
+        </ul>
+    </nav>
+
+    <header class="cabecalho-nexo page-header" role="banner">
+        <div id="logo-container">
+            <h1 class="nexo-title-internal">NEXO</h1>
+            <p class="nexo-subtitle-internal">NOSSOS SERVIÇOS</p>
+        </div>
+    </header>
+    <main id="main-content" role="main">
+        <section id="pagina-servicos" class="centralized-section content-section">
+            <h2 class="services-page-title">Serviços Especializados em Tecnologia</h2>
+            <p class="section-subtitle">
+                Um catálogo completo de serviços de TI sob medida para o seu negócio, desenhados para impulsionar a sua performance e otimizar sua operação.
+            </p>
+
+            <div class="oferecemos-grid servicos-grid">
+                <section class="oferecemos-item servico-item destaque-servico">
+                    <div class="servico-header">
+                        <i class="fas fa-wrench servico-icon"></i>
+                        <h3>Assistência Técnica Proativa</h3>
+                    </div>
+                    <div class="servico-body">
+                        <p>Manutenção preventiva e corretiva, suporte técnico remoto e presencial, e help desk 24/7 para garantir que sua operação nunca pare.</p>
+                        <ul class="servico-lista list-unstyled">
+                            <li><i class="fas fa-tools"></i> Diagnóstico Avançado de Hardware e Software</li>
+                            <li><i class="fas fa-screwdriver-wrench"></i> Reparo e Otimização de Desempenho</li>
+                            <li><i class="fas fa-headset"></i> Suporte Técnico Multicanal: Telefone, Chat e E-mail</li>
+                        </ul>
+                        <a href="#assistencia-detalhes" class="saiba-mais servico-link">Detalhes do Serviço</a>
+                    </div>
+                </section>
+
+                <section class="oferecemos-item servico-item  destaque-servico">
+                    <div class="servico-header">
+                        <i class="fas fa-brain servico-icon"></i>
+                        <h3>Consultoria Estratégica em TI</h3>
+                    </div>
+                    <div class="servico-body">
+                        <p>Análise detalhada da sua infraestrutura, planejamento estratégico de TI alinhado aos seus objetivos de negócio, consultoria especializada em segurança da informação e otimização de processos para aumentar a eficiência.</p>
+                        <ul class="servico-lista list-unstyled">
+                            <li><i class="fas fa-search-plus"></i> Análise Completa e Personalizada da Sua TI</li>
+                            <li><i class="fas fa-chart-line"></i> Estratégias de TI Alinhadas com Seus Objetivos</li>
+                            <li><i class="fas fa-bullseye"></i> Foco em Resultados Mensuráveis e Melhoria Contínua</li>
+                        </ul>
+                        <a href="#consultoria-detalhes" class="saiba-mais servico-link">Detalhes do Serviço</a>
+                    </div>
+                </section>
+
+                <section class="oferecemos-item servico-item  destaque-servico">
+                    <div class="servico-header">
+                        <i class="fas fa-cloud-upload-alt servico-icon"></i>
+                        <h3>Implementação e Gestão de Nuvem</h3>
+                    </div>
+                    <div class="servico-body">
+                        <p>Migração segura para nuvem, gestão completa de ambientes cloud, otimização de custos em nuvem, e soluções robustas de backup e disaster recovery para proteger seus dados e garantir a continuidade operacional.</p>
+                        <ul class="servico-lista list-unstyled">
+                            <li><i class="fas fa-shield-check"></i> Migração Segura e Sem Interrupções</li>
+                            <li><i class="fas fa-cog"></i> Gestão Eficiente e Monitoramento Proativo</li>
+                            <li><i class="fas fa-cloud-versio
+                                ning"></i> Soluções Híbridas e Multi-cloud Sob Medida</li>
+</ul>
+<a href="#nuvem-detalhes" class="saiba-mais servico-link">Detalhes do Serviço</a>
+</div>
+</section>
+
+<section class="oferecemos-item servico-item  produto-link-item">
+                <div class="servico-header">
+                    <i class="fas fa-shopping-cart servico-icon"></i>
+                    <h3>Venda e Implantação de Soluções de TI</h3>
+                </div>
+                <div class="servico-body">
+                    <p>Venda consultiva de hardware e software das melhores marcas, implantação e configuração de sistemas, treinamento especializado e suporte pós-venda contínuo para garantir o sucesso da sua implementação.</p>
+                    <ul class="servico-lista list-unstyled">
+                        <li><i class="fas fa-box-check"></i> Soluções Completas e Prontas para Uso (Turnkey)</li>
+                        <li><i class="fas fa-rocket"></i> Implantação Ágil e Configuração Personalizada</li>
+                        <li><i class="fas fa-hand-holding-heart"></i> Suporte e Acompanhamento Contínuo Pós-Venda</li>
+                    </ul>
+                    <a href="produtos.html" class="saiba-mais servico-link">Ver Produtos</a>
+                </div>
+            </section>
+        </div>
+
+      
+
+         
+
+       
+
+
+     
+<audio id="menu-sound" preload="auto" src="sounds/menu-sound.mp3"></audio>
+<audio id="config-sound" preload="auto" src="sounds/config-sound.mp3"></audio>
+<audio id="search-sound" preload="auto" src="sounds/search-sound.mp3"></audio>
+<audio id="theme-sound" preload="auto" src="sounds/theme-sound.mp3"></audio>
+<audio id="notification-sound" preload="auto" src="sounds/notification-sound.mp3"></audio>
+<audio id="select-sound" preload="auto" src="sounds/select-sound.mp3"></audio>
+<audio id="intro-sound" preload="auto" src="sounds/intro-sound.mp3"></audio>
+
+<script src="script.js"></script>
+</div>
+</body>
+</html>

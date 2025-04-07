@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexo - Assistência Técnica e Soluções em Tecnologia</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Ysabeau+Office:wght@200;400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="dark-theme">
+<a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+<div id="intro-animation" role="dialog" aria-label="Animação de Introdução. Clique para pular ou espere para ser redirecionado para a página principal." tabindex="0">
+    <img src="imagens/NexoIcon.png" alt="Ícone Nexo" class="intro-icon">
+    <div class="intro-text">
+        <p>O futuro da tecnologia, agora.</p>
+    </div>
+</div>
+
+<div id="content-wrapper" style="display:none;">
+    <div id="botoes" role="banner">
+        <div class="botnav">
+            <label class="burger" for="burger" aria-label="Menu de Navegação">
+                <input type="checkbox" id="burger" role="button" aria-controls="nav" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+         <div class="search-container" role="search">
+            <div id="search-bar">
+                <input type="text" id="search-input" placeholder="Pesquisar..." aria-label="Campo de pesquisa">
+                <div id="search-suggestions" aria-live="polite" aria-relevant="additions text">
+                    <ul>
+                    </ul>
+                </div>
+                <button id="search-button" aria-label="Pesquisar"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+         <div class="accessibility-container">
+            <button id="accessibility-button" aria-label="Opções de Acessibilidade" aria-haspopup="true" aria-controls="accessibility-options" aria-expanded="false">
+                <i class="fas fa-universal-access"></i> <span class="config-text">Acessibilidade</span>
+            </button>
+        </div>
+        <div class="config-container">
+            <button id="config-button" aria-label="Configurações">
+                <i class="fas fa-cog"></i> <span class="config-text">Configurações</span>
+            </button>
+         </div>
+     </div>
+
+     <nav id="nav" aria-label="Menu Principal" role="navigation">
+         <button id="close-nav-button" aria-label="Fechar Menu"><i class="fa-solid fa-xmark"></i></button>
+         <ul>
+             <li><a href="index.html"><img src="imagens/inicio.png" alt="Ícone Início" class="nav-icon"> Início</a></li>
+             <li><a href="servicos.html"><img src="imagens/servicos.png" alt="Ícone Serviços" class="nav-icon"> Serviços</a></li>
+             <li><a href="produtos.html"><img src="imagens/produtos.png" alt="Ícone Produtos" class="nav-icon"> Produtos</a></li>
+             <li><a href="contato.html"><img src="imagens/contato.png" alt="Ícone Contato" class="nav-icon"> Contato</a></li>
+             <li><a href="parceiros.html"><img src="imagens/parceiros.png" alt="Ícone Parceiros" class="nav-icon"> Parceiros</a></li>
+         </ul>
+     </nav>
+
+    <header class="cabecalho-nexo" role="banner">
+        <div id="logo-container">
+            <div class="image-container nexo-logo-container">
+                <img class="nexo-logo" id="main-logo" src="imagens/NexoLogo.png" alt="Logotipo Nexo">
+            </div>
+            <div id="hover-logo-info">
+                <div class="image-container circular-icon">
+                    <img class="nexo-icon" src="imagens/NexoIcon.png" alt="Ícone Nexo">
+                </div>
+                <p class="nexo-slogan">Nexo: Fortalecendo Seu Futuro com Tecnologia
+                    <br>Inovação, soluções e compromisso—porque seu sucesso merece o melhor. Construamos o futuro juntos!
+                </p>
+            </div>
+        </div>
+    </header>
+    <main id="main-content" role="main">
+
+        <section id="apresentacao-nexo" class="centralized-section">
+            <h2><b>Bem-vindo à Nexo</b></h2>
+            <p>
+                Somos a ponte entre <b>você e a melhor experiência tecnológica.</b><br> Garantimos agilidade, eficiência e
+                inovação
+                para que sua
+                tecnologia trabalhe a favor do seu crescimento. De suporte técnico a consultoria especializada,
+                resolvemos problemas antes que se tornem obstáculos, oferecendo tranquilidade e desempenho sem
+                falhas.<br>
+                <b>Porque tecnologia não é só ferramenta, é o motor do seu crescimento.</b>
+            </p>
+        </section>
+
+        <section id="diferenciais-nexo" class="centralized-section content-section">
+            <h2>Nossos Diferenciais</h2>
+            <p class="section-subtitle">O que nos destaca no mercado:</p>
+            <ul style="list-style-type: none; padding-left: 0;">
+                <li><b>Agilidade:</b> Respostas rápidas e soluções eficientes.</li>
+                <li><b>Especialização:</b> Profissionais qualificados e experientes.</li>
+                <li><b>Inovação:</b> Acompanhamento constante das novidades tecnológicas.</li>
+                <li><b>Personalização:</b> Atendimento sob medida para cada cliente.</li>
+                <li><b>Tranquilidade:</b> Foco na solução de problemas para você ter paz de espírito.</li>
+            </ul>
+        </section>
+
+        <section id="oferecemos-nexo" class="centralized-section content-section">
+            <h2>O Que Oferecemos</h2>
+            <p class="section-subtitle">Soluções completas para suas necessidades tecnológicas:</p>
+            <div class="oferecemos-grid">
+                <div class="oferecemos-item">
+                    <h3>Assistência Técnica Especializada</h3>
+                    <p>Suporte técnico para computadores, redes, servidores e periféricos.</p>
+                    <a href="servicos.html" class="saiba-mais">Saiba Mais</a>
+                </div>
+                <div class="oferecemos-item">
+                    <h3>Consultoria em Tecnologia</h3>
+                    <p>Consultoria para otimizar seus processos e infraestrutura de TI.</p>
+                    <a href="servicos.html" class="saiba-mais">Saiba Mais</a>
+                </div>
+                <div class="oferecemos-item">
+                    <h3>Soluções em Nuvem</h3>
+                    <p>Implementação e gerenciamento de soluções em nuvem para sua empresa.</p>
+                    <a href="servicos.html" class="saiba-mais">Saiba Mais</a>
+                </div>
+                <div class="oferecemos-item">
+                    <h3>Venda de Produtos de TI</h3>
+                    <p>Equipamentos e softwares de qualidade para todas as suas demandas.</p>
+                    <a href="produtos.html" class="saiba-mais">Saiba Mais</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre-nexo" class="centralized-section content-section">
+            <DIV class="left">
+                <div class="sobre">
+                    <h2 id="sobre-nexo">Sobre a Nexo</h2>
+                    <p class="section-subtitle">Nossa história e compromisso:</p>
+                    <p>
+                        Com ampla experiência no mercado, a Nexo se destaca pelo atendimento personalizado e pela
+                        constante busca por
+                        inovação.
+                        Nossa equipe é composta por profissionais qualificados, prontos para solucionar os desafios
+                        tecnológicos com
+                        agilidade e eficácia.
+                    </p>
+                 </div>
+                 <div class="team-members">
+
+                <article class="membro">
+                    <img src="imagens/Design sem nome (1)/1.png" alt="Foto de Arthur Mikhael" class="team-photo" loading="lazy">
+                    <h3>Arthur Mikhael</h3>
+                    <p>Garantindo operações ágeis e suporte eficiente para nossos clientes.</p>
+                </article>
+
+                 <article class="membro membro-destaque">
+                     <img src="imagens/Design sem nome (1)/3.png" alt="Foto de Barbara Aires" class="team-photo" loading="lazy">
+                    <h3>Barbara Aires</h3>
+                    <p>Conectando clientes à melhor experiência com tecnologia e inovação. Visão Estratégica e Inovadora.</p>
+                </article>
+
+                <article class="membro">
+                     <img src="imagens/Design sem nome (1)/2.png" alt="Foto de Kaike Nicson" class="team-photo" loading="lazy">
+                    <h3>Kaike Nicson</h3>
+                    <p>Transformando tecnologia em soluções inteligentes para seu negócio.</p>
+                </article>
+
+                <article class="membro">
+                     <img src="imagens/Design sem nome (1)/4.png" alt="Foto de Augusto Ponciano" class="team-photo" loading="lazy">
+                    <h3>Augusto Ponciano</h3>
+                    <p>Levando a NEXO a novos horizontes com estratégias comerciais eficazes.</p>
+                </article>
+            </DIV>
+
+            <div class="right-sections">
+                <div class="missao-nexo">
+                    <h3>Nossa Missão</h3>
+                    <p>
+                        Oferecer soluções tecnológicas com excelência, superando as expectativas dos nossos clientes por
+                        meio de um
+                        atendimento ágil e personalizado.
+                    </p>
+                </div>
+                <div class="visao-nexo">
+                    <h3>Nossa Visão</h3>
+                    <p>
+                        Ser referência no mercado de assistência técnica, inovando constantemente e contribuindo para o
+                        desenvolvimento tecnológico de nossos parceiros.
+                    </p>
+                </div>
+                <div class="valores-nexo">
+                    <h3>Nossos Valores</h3>
+                    <ul>
+                        <li>Comprometimento</li>
+                        <li>Transparência</li>
+                        <li>Inovação</li>
+                        <li>Excelência</li>
+                        <li>Ética</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="comentarios-nexo" class="centralized-section content-section">
+            <h2>Comentários e Feedback de Clientes</h2>
+            <p class="section-subtitle">O que nossos clientes dizem sobre nós:</p>
+
+            <div id="feedback-form-container">
+                <h3>Deixe seu Feedback</h3>
+                <form id="feedback-form" action="#" method="POST">
+                    <div class="form-group">
+                        <label for="feedback-name">Nome:</label>
+                        <input type="text" id="feedback-name" name="feedback-name" required aria-required="true">
+                         <span id="feedback-name-error" class="error-message" aria-live="assertive"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="feedback-rating">Avaliação:</label>
+                        <select id="feedback-rating" name="feedback-rating" required aria-required="true">
+                            <option value="5">★★★★★</option>
+                            <option value="4">★★★★☆</option>
+                            <option value="3">★★★☆☆</option>
+                            <option value="2">★★☆☆☆</option>
+                            <option value="1">★☆☆☆☆</option>
+                        </select>
+                         <span id="feedback-rating-error" class="error-message" aria-live="assertive"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="feedback-comment">Comentário:</label>
+                        <textarea id="feedback-comment" name="feedback-comment" rows="4" required aria-required="true"></textarea>
+                         <span id="feedback-comment-error" class="error-message" aria-live="assertive"></span>
+                    </div>
+                    <button type="submit" class="enviar-button">Enviar Feedback</button>
+                </form>
+            </div>
+
+            <div id="comments-display">
+                <h3>Comentários Recentes</h3>
+                <div class="comment">
+                    <div class="user-info">
+                        <div class="image-container circular-user-image">
+                            <img src="imagens/jorge.jpg" alt="Foto do Usuário" class="user-photo" loading="lazy">
+                        </div>
+                        <h4>Jorge</h4>
+                    </div>
+                    <div class="rating">★★★★★</div>
+                    <p>"HOMENS COMRPEM COM NEXO QUE ELES ENTRGAM RAPIDO"</p>
+                </div>
+                <div class="comment">
+                    <div class="user-info">
+                        <div class="image-container circular-user-image">
+                            <img src="imagens/loki.jpg" alt="Foto do Usuário" class="user-photo" loading="lazy">
+                        </div>
+                        <h4>Matheus Loki Oficial</h4>
+                    </div>
+                    <div class="rating">★★★★☆</div>
+                    <p>"VOU PODER JOGAR FREE FIRE"</p>
+                </div>
+                <div class="comment">
+                    <div class="user-info">
+                        <div class="image-container circular-user-image">
+                            <img src="imagens/gatinha 202.png" alt="Foto do Usuário" class="user-photo" loading="lazy">
+                        </div>
+                        <h4>gatinha 202</h4>
+                    </div>
+                    <div class="rating">★★★★★</div>
+                    <p>"humm adorei o atendimento "</p>
+                </div>
+                 <div class="comment">
+                    <div class="user-info">
+                        <div class="image-container circular-user-image">
+                            <img src="imagens/diego.jpg" alt="Foto do Usuário" class="user-photo" loading="lazy">
+                        </div>
+                        <h4>Diego brando</h4>
+                    </div>
+                    <div class="rating">★★★★☆</div>
+                    <p>"otimas peças,porem demoraram pra entregar"</p>
+                </div>
+                 <div class="comment">
+                    <div class="user-info">
+                        <div class="image-container circular-user-image">
+                            <img src="imagens/prepucin.jpg" alt="Foto do Usuário" class="user-photo" loading="lazy">
+                        </div>
+                        <h4>Alexandre de Moraes</h4>
+                    </div>
+                    <div class="rating">★☆☆☆☆</div>
+                    <p>"vai cair engual o x."</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="chamada-acao-nexo" class="centralized-section content-section">
+            <h2>Pronto para Iniciar?</h2>
+            <p>
+                Entre em contato conosco e descubra como a Nexo pode impulsionar o seu futuro tecnológico.
+            </p>
+            <a href="contato.html" class="botao-orcamento-nexo"><b>Solicite um Orçamento</b></a>
+        </section>
+    </main>
+
+    <footer id="rodape-nexo" role="contentinfo">
+        <div class="footer-bottom">
+            <p>© 2025 Nexo Assistência Técnica. Todos os direitos reservados.</p>
+            <p>Desenvolvido por Nexo </p>
+        </div>
+    </footer>
+    <audio id="menu-sound" preload="auto" src="sounds/menu-sound.mp3"></audio>
+    <audio id="config-sound" preload="auto" src="sounds/config-sound.mp3"></audio>
+    <audio id="search-sound" preload="auto" src="sounds/search-sound.mp3"></audio>
+    <audio id="theme-sound" preload="auto" src="sounds/theme-sound.mp3"></audio>
+    <audio id="notification-sound" preload="auto" src="sounds/notification-sound.mp3"></audio>
+    <audio id="select-sound" preload="auto" src="sounds/select-sound.mp3"></audio>
+    <audio id="intro-sound" preload="auto" src="sounds/intro-sound.mp3"></audio>
+    <div id="accessibility-options" style="display: none; position: fixed; top: 58px; right: 10px; background-color: rgba(30, 30, 35, 0.9); padding: 20px; border-radius: 10px; box-shadow: 3px 3px 7px rgba(0,0,0,0.4); z-index: 1500; text-align: left; border: 1px solid #555;" aria-hidden="true" aria-labelledby="accessibility-panel-heading">
+        <h4 id="accessibility-panel-heading" style="margin-top: 0; margin-bottom: 15px;">Opções de Acessibilidade</h4>
+        <div style="margin-bottom: 10px;"><button id="increase-font-button" class="config-button-style"><i class="fa-solid fa-font-increase"></i> Aumentar Font</button> <button id="decrease-font-button" class="config-button-style"><i class="fa-solid fa-font-decrease"></i> Diminuir Font</button></div><br>
+        <button id="high-contrast-button" class="config-button-style"><i class="fa-solid fa-circle-half-stroke"></i> Alto Contraste</button><br><br>
+        <button id="dyslexia-font-button" class="config-button-style"><i class="fa-solid fa- Braille"></i> Fonte para Dislexia</button><br><br>
+        <button id="text-spacing-button" class="config-button-style"><i class="fa-solid fa-text-width"></i> Espaçamento de Texto</button><br><br>
+        <button id="line-height-button" class="config-button-style"><i class="fa-solid fa-text-height"></i> Altura da Linha</button><br><br>
+        <button id="grayscale-button" class="config-button-style"><i class="fa-solid fa-eye-dropper"></i> Tons de Cinza</button><br><br>
+        <button id="invert-colors-button" class="config-button-style"><i class="fa-solid fa-invert"></i> Inverter Cores</button><br><br>
+        <button id="remove-animations-button" class="config-button-style"><i class="fa-solid fa-film"></i> Remover Animações</button><br><br>
+        <button id="highlight-links-button" class="config-button-style"><i class="fa-solid fa-link"></i> Destacar Links</button><br><br>
+        <button id="close-accessibility-button" class="config-button-style"><i class="fa-solid fa-xmark"></i> Fechar</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

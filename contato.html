@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Nexo Assistência Técnica e Soluções em Tecnologia</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Ysabeau+Office:wght@200;400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body class="dark-theme">
+<a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+<div id="intro-animation" role="dialog" aria-label="Animação de Introdução. Clique para pular ou espere para ser redirecionado para a página principal." tabindex="0">
+    <img src="imagens/NexoIcon.png" alt="Ícone Nexo" class="intro-icon" loading="lazy">
+     <div class="intro-text">
+        <p>O futuro da tecnologia, agora.</p>
+    </div>
+</div>
+
+<div id="content-wrapper" style="display:none;">
+    <div id="botoes" role="banner">
+        <div class="botnav">
+            <label class="burger" for="burger" aria-label="Menu de Navegação">
+                <input type="checkbox" id="burger" role="button" aria-controls="nav" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+
+
+         <div class="search-container" role="search">
+            <div id="search-bar">
+                <input type="text" id="search-input" placeholder="Pesquisar..." aria-label="Campo de pesquisa">
+                 <div id="search-suggestions" aria-live="polite" aria-relevant="additions text">
+                    <ul></ul>
+                </div>
+                <button id="search-button" aria-label="Pesquisar"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+
+         <div class="accessibility-container">
+            <button id="accessibility-button" aria-label="Opções de Acessibilidade" aria-haspopup="true" aria-controls="accessibility-options" aria-expanded="false">
+                <i class="fas fa-universal-access"></i> <span class="config-text">Acessibilidade</span>
+            </button>
+        </div>
+
+
+        <div class="config-container">
+            <button id="config-button" aria-label="Configurações">
+                <i class="fas fa-cog"></i> <span class="config-text">Configurações</span>
+            </button>
+
+
+         </div>
+
+    </div>
+
+
+    <nav id="nav" aria-label="Menu Principal" role="navigation">
+        <button id="close-nav-button" aria-label="Fechar Menu"><i class="fa-solid fa-xmark"></i></button>
+        <ul>
+            <li><a href="index.html"><img src="imagens/inicio.png" alt="Ícone Início" class="nav-icon"> Início</a></li>
+            <li><a href="servicos.html"><img src="imagens/servicos.png" alt="Ícone Serviços" class="nav-icon"> Serviços</a></li>
+            <li><a href="produtos.html"><img src="imagens/produtos.png" alt="Ícone Produtos" class="nav-icon"> Produtos</a></li>
+            <li class="current-page"><a href="contato.html" aria-current="page"><img src="imagens/contato.png" alt="Ícone Contato" class="nav-icon"> Contato</a></li>
+            <li><a href="parceiros.html"><img src="imagens/parceiros.png" alt="Ícone Parceiros" class="nav-icon"> Parceiros</a></li>
+        </ul>
+    </nav>
+
+    <header class="cabecalho-nexo" role="banner">
+        <div id="logo-container">
+            <h1 class="nexo-title-internal">NEXO</h1>
+            <p class="nexo-subtitle-internal">CONECTANDO VOCÊ À MELHOR TECNOLOGIA</p>
+        </div>
+    </header>
+    <main id="main-content" role="main">
+        <section id="pagina-contato" class="centralized-section content-section">
+            <h2>Fale Conosco</h2>
+            <p class="section-subtitle">
+                Estamos à disposição para entender suas necessidades e oferecer as melhores soluções.
+            </p>
+
+            <div id="contato-wrapper">
+                <div id="contato-info">
+                    <section id="contato-geral">
+                        <h3>Informações Gerais</h3>
+                        <p>
+                            <i class="fas fa-map-marker-alt contato-icon"></i> <strong>Endereço:</strong> <address style="display:inline; font-style: normal;">Rua Exemplo, 123 - Bairro Exemplar, Cidade - UF</address>
+                        </p>
+                        <p>
+                            <i class="fas fa-envelope contato-icon"></i> <strong>E-mail:</strong> <a href="mailto:contato@nexo.com.br">contato@nexo.com.br</a>
+                        </p>
+                        <p>
+                            <i class="fas fa-phone contato-icon"></i> <strong>Telefone:</strong> <a href="tel:+550000000000">(00) 0000-0000</a>
+                        </p>
+                    </section>
+
+                    <section id="contato-redes-sociais">
+                        <h3>Redes Sociais</h3>
+                        <p>
+                            <i class="fab fa-instagram contato-icon"></i> <a href="https://www.instagram.com/nexoassistenciatecnica" target="_blank">@nexoassistenciatecnica</a>
+                        </p>
+                        <div class="social-icons contato-social-icons">
+                            <a href="https://www.facebook.com/nexoassistenciatecnica" target="_blank" aria-label="Ícone do Facebook">
+                                <div class="image-container circular-icon">
+                                    <img src="imagens/facebook.png" alt="Ícone do Facebook" class="social-icon" loading="lazy">
+                                </div>
+                            </a>
+                            <a href="https://twitter.com/Nexo_tec" target="_blank" aria-label="Ícone do Twitter">
+                                <div class="image-container circular-icon">
+                                   <img src="imagens/twitter.png" alt="Ícone do Twitter" class="social-icon" loading="lazy">
+                                </div>
+                            </a>
+                            <a href="https://www.instagram.com/nexoassistencia?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" aria-label="Ícone do Instagram">
+                                <div class="image-container circular-icon">
+                                    <img src="imagens/instagram.png" alt="Ícone do Instagram" class="social-icon" loading="lazy">
+                                </div>
+                            </a>
+                        </div>
+                    </section>
+                </div>
+
+                <div id="contato-form">
+                    <section id="formulario-contato">
+                        <h3>Formulário de Contato</h3>
+                        <p class="form-instructions">
+                            Preencha o formulário abaixo para enviar sua mensagem diretamente para nossa equipe. Responderemos o mais breve possível.
+                        </p>
+                        <form id="contactForm" action="#" method="POST">
+                            <div class="form-group">
+                                <label for="nome">Nome Completo:</label>
+                                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required aria-required="true">
+                                <span id="nome-error" class="error-message" aria-live="assertive"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-mail:</label>
+                                <input type="email" id="email" name="email" placeholder="Seu melhor email" required aria-required="true">
+                                 <span id="email-error" class="error-message" aria-live="assertive"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="telefone">Telefone:</label>
+                                <input type="tel" id="telefone" name="telefone" placeholder="DDD + Telefone (opcional)">
+                                 <span id="telefone-error" class="error-message" aria-live="assertive"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="mensagem">Mensagem:</label>
+                                <textarea id="mensagem" name="mensagem" rows="5" placeholder="Sua mensagem para nós" required aria-required="true"></textarea>
+                                 <span id="mensagem-error" class="error-message" aria-live="assertive"></span>
+                            </div>
+                            <button type="submit" class="enviar-button">Enviar Mensagem</button>
+                        </form>
+                    </section>
+                </div>
+            </div>
+
+
+        </section>
+    </main>
+    <footer id="rodape-nexo" role="contentinfo">
+        <div class="footer-bottom">
+            <p>© 2025 Nexo Assistência Técnica. Todos os direitos reservados.</p>
+            <p>Desenvolvido por Nexo </p>
+        </div>
+    </footer>
+    <audio id="menu-sound" preload="auto" src="sounds/menu-sound.mp3"></audio>
+    <audio id="config-sound" preload="auto" src="sounds/config-sound.mp3"></audio>
+    <audio id="search-sound" preload="auto" src="sounds/search-sound.mp3"></audio>
+    <audio id="theme-sound" preload="auto" src="sounds/theme-sound.mp3"></audio>
+    <audio id="notification-sound" preload="auto" src="sounds/notification-sound.mp3"></audio>
+    <audio id="select-sound" preload="auto" src="sounds/select-sound.mp3"></audio>
+     <audio id="intro-sound" preload="auto" src="sounds/intro-sound.mp3"></audio>
+     <div id="accessibility-options" style="display: none; position: fixed; top: 58px; right: 10px; background-color: rgba(30, 30, 35, 0.9); padding: 20px; border-radius: 10px; box-shadow: 3px 3px 7px rgba(0,0,0,0.4); z-index: 1500; text-align: left; border: 1px solid #555;" aria-hidden="true" aria-labelledby="accessibility-panel-heading">
+        <h4 id="accessibility-panel-heading" style="margin-top: 0; margin-bottom: 15px;">Opções de Acessibilidade</h4>
+        <div style="margin-bottom: 10px;"><button id="increase-font-button" class="config-button-style"><i class="fa-solid fa-font-increase"></i> Aumentar Font</button> <button id="decrease-font-button" class="config-button-style"><i class="fa-solid fa-font-decrease"></i> Diminuir Font</button></div><br>
+        <button id="high-contrast-button" class="config-button-style"><i class="fa-solid fa-circle-half-stroke"></i> Alto Contraste</button><br><br>
+        <button id="dyslexia-font-button" class="config-button-style"><i class="fa-solid fa- Braille"></i> Fonte para Dislexia</button><br><br>
+        <button id="text-spacing-button" class="config-button-style"><i class="fa-solid fa-text-width"></i> Espaçamento de Texto</button><br><br>
+        <button id="line-height-button" class="config-button-style"><i class="fa-solid fa-text-height"></i> Altura da Linha</button><br><br>
+        <button id="grayscale-button" class="config-button-style"><i class="fa-solid fa-eye-dropper"></i> Tons de Cinza</button><br><br>
+        <button id="invert-colors-button" class="config-button-style"><i class="fa-solid fa-invert"></i> Inverter Cores</button><br><br>
+        <button id="remove-animations-button" class="config-button-style"><i class="fa-solid fa-film"></i> Remover Animações</button><br><br>
+        <button id="highlight-links-button" class="config-button-style"><i class="fa-solid fa-link"></i> Destacar Links</button><br><br>
+        <button id="close-accessibility-button" class="config-button-style"><i class="fa-solid fa-xmark"></i> Fechar</button>
+    </div>
+    <script src="script.js"></script>
+</div>
+</body>
+</html>

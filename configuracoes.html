@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configurações - Nexo Assistência Técnica e Soluções em Tecnologia</title>
+    <link rel="stylesheet" href="style.css" />
+     <link rel="stylesheet" href="style-configuracoes.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Ysabeau+Office:wght@200;400;700&display=swap">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="light-theme">
+<a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+<div id="intro-animation" role="dialog" aria-label="Animação de Introdução. Clique para pular ou espere para ser redirecionado para a página principal." tabindex="0">
+    <img src="imagens/NexoIcon.png" alt="Nexo Icon" class="intro-icon">
+     <div class="intro-text">
+        <p>Ajustando Suas Preferências...</p>
+    </div>
+     <button id="skip-intro-button" onclick="skipIntro()">Pular Intro <i class="fa-solid fa-forward"></i></button>
+</div>
+
+<div id="content-wrapper" style="display:none;">
+    <header id="botoes" class="sticky-header" role="banner">
+        <div class="botnav">
+            <label class="burger" for="burger" aria-label="Menu de Navegação">
+                <input type="checkbox" id="burger" role="button" aria-controls="nav" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+
+         <div class="search-container" role="search">
+            <div id="search-bar">
+                <input type="text" id="search-input" placeholder="Pesquisar em configurações..." aria-label="Campo de pesquisa de configurações">
+                 <div id="search-suggestions" aria-live="polite" aria-relevant="additions text">
+                    <ul></ul>
+                </div>
+                <button id="search-button" aria-label="Pesquisar Configurações"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+
+         <div class="accessibility-container">
+            <button id="accessibility-button" aria-label="Opções de Acessibilidade" aria-haspopup="true" aria-controls="accessibility-options" aria-expanded="false">
+                <i class="fas fa-universal-access"></i>
+            </button>
+        </div>
+
+    </header>
+
+    <nav id="nav" aria-label="Menu Principal" role="navigation">
+        <button id="close-nav-button" aria-label="Fechar Menu"><i class="fa-solid fa-xmark"></i></button>
+        <ul>
+            <li><a href="index.html"><img src="imagens/inicio.png" alt="Ícone Início" class="nav-icon"> Início</a></li>
+            <li><a href="servicos.html"><img src="imagens/servicos.png" alt="Ícone Serviços" class="nav-icon"> Serviços</a></li>
+            <li><a href="produtos.html"><img src="imagens/produtos.png" alt="Ícone Produtos" class="nav-icon"> Produtos</a></li>
+            <li><a href="contato.html"><img src="imagens/contato.png" alt="Ícone Contato" class="nav-icon"> Contato</a></li>
+            <li><a href="parceiros.html"><img src="imagens/parceiros.png" alt="Ícone Parceiros" class="nav-icon"> Parceiros</a></li>
+        </ul>
+    </nav>
+
+
+    <header class="cabecalho-nexo page-header" role="banner">
+        <div id="logo-container">
+            <h1 class="nexo-title-internal configuracoes"><i class="fas fa-cog"></i> CONFIGURAÇÕES</h1>
+            <p class="nexo-subtitle-internal">Personalize sua experiência Nexo</p>
+        </div>
+    </header>
+
+    <main id="main-content" role="main">
+        <section id="configuracoes-nexo" class="centralized-section content-section">
+            <div id="config-panel-page">
+                <h3 class="config-panel-title"><img src="imagens/NexoIcon.png" alt="Ícone Nexo" class="config-modal-icon"> Geral</h3>
+
+                <div class="config-option">
+                    <label for="theme-switcher-page"><i class="fas fa-adjust"></i> Tema</label>
+                    <button id="theme-button-page" class="config-button-style" aria-live="polite">
+                        <input type="checkbox" id="theme-switcher-page" hidden>
+                        <span class="button-text">Tema Claro</span>
+                    </button>
+                </div>
+
+                <div class="config-option">
+                    <label for="language-select-page"><i class="fas fa-globe"></i> Idioma</label>
+                    <select id="language-select-page" class="config-select-style" aria-label="Selecione o idioma do site">
+                        <option value="pt-BR">Português</option>
+                        <option value="en-US">English</option>
+                        <option value="es-ES">Español</option>
+                        <option value="fr-FR">Français</option>
+                        <option value="de-DE">Deutsch</option>
+                        <option value="ja-JP">日本語</option>
+                        <option value="zh-CN">中文</option>
+                        <option value="ru-RU">Русский</option>
+                        <option value="ar-AE">العربية</option>
+                         <option value="hi-IN">हिन्दी</option>
+                    </select>
+                </div>
+
+                <div class="config-option">
+                    <label><i class="fas fa-bell"></i> Notificações</label>
+                    <button id="notifications-button-page" class="config-button-style" aria-live="polite">
+                        <input type="checkbox" id="notifications-switcher-page" hidden>
+                        <span class="button-text">Desativadas</span>
+                    </button>
+                </div>
+
+                <h3 class="config-panel-title"><i class="fas fa-user-shield"></i> Privacidade</h3>
+
+                <div class="config-option">
+                    <label><i class="fas fa-eye"></i> Opções de Privacidade</label>
+                    <button id="privacy-settings-page" class="config-link-style">Gerenciar Privacidade</button>
+                </div>
+
+                <div class="config-option">
+                    <label><i class="fas fa-user-secret"></i> Política de Privacidade</label>
+                    <button id="privacy-policy-page" class="config-link-style">Ver Política</button>
+                </div>
+
+                 <h3 class="config-panel-title"><i class="fas fa-users"></i> Conta</h3>
+
+                <div class="config-option">
+                    <label><i class="fas fa-user-cog"></i> Gerenciar Conta</label>
+                    <button id="account-settings-page" class="config-link-style">Acessar Configurações</button>
+                </div>
+
+                <div class="config-option">
+                    <label><i class="fas fa-sign-out-alt"></i> Sair da Conta</label>
+                    <button id="logout-button-page" class="config-link-style destructive-button">Logout</button>
+                </div>
+
+
+                 <h3 class="config-panel-title"><i class="fas fa-paint-brush"></i> Acessibilidade</h3>
+
+                <div class="config-option">
+                    <label><i class="fas fa-universal-access"></i> Painel de Acessibilidade</label>
+                    <button id="accessibility-settings-page" class="config-link-style">Opções de Acessibilidade</button>
+                </div>
+
+                <h3 class="config-panel-title"><i class="fas fa-info-circle"></i> Sobre</h3>
+
+                <div class="config-option">
+                    <label><i class="fas fa-question-circle"></i> Ajuda e Suporte</label>
+                    <a href="ajuda.html" id="help-page" class="config-link-style">Central de Ajuda</a>
+                </div>
+
+                <div class="config-option">
+                    <label><i class="fas fa-users"></i> Sobre Nós</label>
+                    <a href="index.html#sobre-nexo" id="about-us-page" class="config-link-style">Conheça a Nexo</a>
+                </div>
+
+                <div class="config-option">
+                    <label><i class="fas fa-file-contract"></i> Termos de Uso</label>
+                    <button id="terms-of-use-page" class="config-link-style">Ler Termos</button>
+                </div>
+
+                 <h3 class="config-panel-title destructive"><i class="fas fa-trash-alt destructive-icon"></i> Limpar Dados</h3>
+
+                <div class="config-option config-option-destructive">
+                    <label><i class="fas fa-broom destructive-icon"></i> Limpar Cache</label>
+                    <button id="clear-cache-page" class="config-link-style destructive-button">Limpar Cache do Site</button>
+                </div>
+
+                 <div class="config-option config-option-destructive">
+                    <label><i class="fas fa-history destructive-icon"></i> Limpar Histórico</label>
+                    <button id="clear-history-page" class="config-link-style destructive-button">Limpar Histórico de Busca</button>
+                </div>
+
+
+            </div>
+        </section>
+    </main>
+    <footer id="rodape-nexo" role="contentinfo">
+        <div class="footer-bottom">
+            <p>© 2025 Nexo Assistência Técnica. Todos os direitos reservados.</p>
+            <p>Desenvolvido por Nexo </p>
+        </div>
+    </footer>
+    <audio id="menu-sound" preload="auto" src="sounds/menu-sound.mp3"></audio>
+    <audio id="config-sound" preload="auto" src="sounds/config-sound.mp3"></audio>
+    <audio id="search-sound" preload="auto" src="sounds/search-sound.mp3"></audio>
+    <audio id="theme-sound" preload="auto" src="sounds/theme-sound.mp3"></audio>
+    <audio id="notification-sound" preload="auto" src="sounds/notification-sound.mp3"></audio>
+    <audio id="select-sound" preload="auto" src="sounds/select-sound.mp3"></audio>
+     <audio id="intro-sound" preload="auto" src="sounds/intro-sound.mp3"></audio>
+     <div id="accessibility-options" style="display: none; position: fixed; top: 58px; right: 10px; background-color: rgba(30, 30, 35, 0.9); padding: 20px; border-radius: 10px; box-shadow: 3px 3px 7px rgba(0,0,0,0.4); z-index: 1500; text-align: left; border: 1px solid #555;" aria-hidden="true" aria-labelledby="accessibility-panel-heading">
+        <h4 id="accessibility-panel-heading" style="margin-top: 0; margin-bottom: 15px;">Opções de Acessibilidade</h4>
+        <div style="margin-bottom: 10px;"><button id="increase-font-button" class="config-button-style"><i class="fa-solid fa-font-increase"></i> Aumentar Font</button> <button id="decrease-font-button" class="config-button-style"><i class="fa-solid fa-font-decrease"></i> Diminuir Font</button></div><br>
+        <button id="high-contrast-button" class="config-button-style"><i class="fa-solid fa-circle-half-stroke"></i> Alto Contraste</button><br><br>
+        <button id="dyslexia-font-button" class="config-button-style"><i class="fa-solid fa- Braille"></i> Fonte para Dislexia</button><br><br>
+        <button id="text-spacing-button" class="config-button-style"><i class="fa-solid fa-text-width"></i> Espaçamento de Texto</button><br><br>
+        <button id="line-height-button" class="config-button-style"><i class="fa-solid fa-text-height"></i> Altura da Linha</button><br><br>
+        <button id="grayscale-button" class="config-button-style"><i class="fa-solid fa-eye-dropper"></i> Tons de Cinza</button><br><br>
+        <button id="invert-colors-button" class="config-button-style"><i class="fa-solid fa-invert"></i> Inverter Cores</button><br><br>
+        <button id="remove-animations-button" class="config-button-style"><i class="fa-solid fa-film"></i> Remover Animações</button><br><br>
+        <button id="highlight-links-button" class="config-button-style"><i class="fa-solid fa-link"></i> Destacar Links</button><br><br>
+        <button id="close-accessibility-button" class="config-button-style"><i class="fa-solid fa-xmark"></i> Fechar</button>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
